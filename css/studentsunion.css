@@ -92,40 +92,6 @@ main {
   background-color: rgba(0,0,0,0.7);
 }
 
-table { 
-  margin: 20px 0;
-}
-
-th {
-  color: rgb(0,177,225);
-}
-
-table th, table td {
-  padding-left: 2%;
-}
-
-input {
-  width: 476px;
-}
-
-textarea {
-  min-width: 474px;
-  max-width: 474px;
-  min-height: 20px;
-}
-
-table tr th:nth-child(1), table tr td:nth-child(1) {
-  padding-left: 0;
-}
-
-main *.highlight {
-  font-weight: bolder;
-}
-
-main article {
-  margin: 20px 0;
-  border-top: 1px solid rgb(200,200,200);
-}
 
 main>img {
   float: right;
