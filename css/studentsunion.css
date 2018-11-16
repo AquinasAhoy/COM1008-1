@@ -1,4 +1,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 /* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body { 
@@ -9,9 +11,19 @@ body {
   line-height: 1.5em;
   text-align: justify;
   min-width: 320px;
-  width: 500px;
+  max-width: 100%;
   margin: auto;
 }
+
+
+@media only screen and (min-width: 900px) {
+ body {
+  max-width: 940px;
+ }
+}
+
+
+
 
 h1{
 	color: rgb(0,177,225);	
@@ -39,13 +51,16 @@ p {
 
 header {
   margin: auto;
-  padding: 40px 0 5px 0;
+  padding: 120px 0 5px 0;
 }
 
 header img{
   display: block;
     margin-left: auto;
     margin-right: auto;
+	max-width: 376px;
+	width: 90%;
+	padding: 5px 5px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -53,26 +68,65 @@ header img{
 
 nav {
   margin-bottom: 2px;
-  padding: 5px 2%;
+  
   color: rgb(0,177,225);
-  font-size: 1em;
+
   background-color: rgba(0,0,0,0.7);
+  
+  
 }
 
-nav ul {  
-  margin: 0;
+nav ul {
   padding: 0;
+  margin: 0;
   list-style: none;
+ 
 }
 
 nav ul li {
-  display: inline;
-  padding-right: 2%;
+  padding: 0;
+  display: inline-block;
 }
 
 nav a {
+  padding: 4px 7px;
+  display: block;
   text-decoration: none;
   outline: none;
+}
+
+#button1{
+	padding-left: 12px;
+
+}
+
+#button2{
+display: none;
+}
+
+@media only screen and (min-width: 430px) {
+  #button2 {
+  display: block;
+  }
+}
+
+.dropdown-links {
+    display: none;
+	position: absolute;
+    z-index: 1;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown:hover .dropdown-links {
+    display: block;
+}
+
+.dropdown-links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	padding: 5px 15px;
 }
 
 a:link { color: rgb(0,177,225); }
@@ -80,7 +134,10 @@ a:link { color: rgb(0,177,225); }
 a:visited { color: rgb(0,177,225); }
 
 a:hover { 
-  color: yellow;
+  background-color: black;
+}
+.active {
+    background-color: rgba(255,255,255,0.3);
 }
 
 
@@ -88,7 +145,7 @@ a:hover {
 /* ~~~main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 main {
-  padding: 5px 2%;
+  padding: 5px 20px;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -104,14 +161,21 @@ table th, table td {
   padding-left: 2%;
 }
 
-input {
-  width: 476px;
+input[type=email]{
+	width: 200px;
+}
+
+ul {
+	list-style-type: square;
 }
 
 textarea {
-  min-width: 474px;
-  max-width: 474px;
+  resize: none;
+  overflow: auto;
+  width: calc(100% - 4px);
   min-height: 20px;
+  font-family: Calibri, sans-serif;
+  line-height: 1.5em;
 }
 
 table tr th:nth-child(1), table tr td:nth-child(1) {
