@@ -4,25 +4,16 @@
 /* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body { 
-  background: url("../images/suFront1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: white; 
-  font-family: Calibri, sans-serif;
-  line-height: 1.5em;
-  text-align: justify;
-  min-width: 320px;
-  max-width: 100%;
-  margin: auto;
+	background: url("../images/suFront1.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white; 
+	font-family: Calibri, sans-serif;
+	line-height: 1.5em;
+	text-align: justify;
+	min-width: 260px;
+	max-width: 940px;
+	margin: auto;
 }
-
-
-@media only screen and (min-width: 900px) {
- body {
-  max-width: 940px;
- }
-}
-
-
 
 
 h1{
@@ -36,81 +27,78 @@ h1{
 h2 {  
 	margin-top: 0;
 	margin-bottom: 0.25em;
-  font-size: 1.2em;
-  color: rgb(0,177,225);	
+	font-size: 1.2em;
+	color: rgb(0,177,225);	
 }
 
 h3 {  
-margin-top: 0;
-  font-size: 1em;
+	margin-top: 0;
+	font-size: 1em;
 }
 
 p {
-   margin-top: 0;
+	margin-top: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 header {
-  margin: auto;
-  padding: 120px 0 5px 0;
+	padding: 120px 0 5px 0;
 }
 
 header img{
-  display: block;
+	display: block;
     margin-left: auto;
     margin-right: auto;
 	max-width: 376px;
 	width: 90%;
-	padding: 5px 5px;
+	padding: 5px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 nav {
-  margin-bottom: 2px;
-  
-  color: rgb(0,177,225);
-
-  background-color: rgba(0,0,0,0.7);
-  
-  
+	margin-bottom: 2px;
+  	color: rgb(0,177,225);
+	background-color: rgba(0,0,0,0.7); 
 }
 
 nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
- 
+	padding: 0;
+	margin: 0;
 }
 
 nav ul li {
-  padding: 0;
-  display: inline-block;
+	display: inline-block;
 }
 
 nav a {
-  padding: 4px 7px;
-  display: block;
-  text-decoration: none;
-  outline: none;
+	padding: 4px 7px;
+	display: block;
+	text-decoration: none;
+	outline: none;
 }
 
-#button1{
+#leftmost{
 	padding-left: 12px;
-
 }
 
-#button2{
-display: none;
+#rightmost, #rightmost2nd{
+	display: none;
 }
 
-@media only screen and (min-width: 430px) {
-  #button2 {
-  display: block;
-  }
+@media (min-width: 430px) {
+	#rightmost {
+		display: block;
+	}
+}
+
+@media (min-width: 319px) {
+	#rightmost2nd {
+		display: block;
+	}
 }
 
 .dropdown-links {
@@ -132,12 +120,16 @@ display: none;
 	padding: 5px 15px;
 }
 
-a:link { color: rgb(0,177,225); }
+a:link { 
+	color: rgb(0,177,225);
+}
 
-a:visited { color: rgb(0,177,225); }
+a:visited {
+	color: rgb(0,177,225);
+	}
 
 a:hover { 
-  background-color: black;
+	background-color: black;
 }
 .active {
     background-color: rgba(255,255,255,0.3);
@@ -148,88 +140,62 @@ a:hover {
 /* ~~~main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 main {
-  padding: 5px 20px;
-  background-color: rgba(0,0,0,0.7);
-  margin-bottom: 2px;
+	padding: 5px 20px;
+	background-color: rgba(0,0,0,0.7);
+	margin-bottom: 2px;
+}
+
+main ul{
+	text-align: left;
 }
 
 table { 
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 th {
-  color: rgb(0,177,225);
+	color: rgb(0,177,225);
 }
 
 table th, table td {
-  padding-left: 2%;
+	padding-left: 2%;
 }
 
 input[type=email]{
 	width: 200px;
 }
 
-ul {
-	list-style-type: square;
-}
 
 textarea {
-  resize: none;
-  overflow: auto;
-  width: calc(100% - 4px);
-  min-height: 20px;
-  font-family: Calibri, sans-serif;
-  line-height: 1.5em;
+	resize: none;
+	overflow: auto;
+	width: calc(100% - 4px);
+	font-family: Arial, sans-serif;
 }
 
-
-main>img {
-  float: right;
-  margin: 10px 0;
-}
-
-figure {
-	
-}
-
-.container {
-    display: block;
-}
-
-.container2 {
-    display: block;
-	padding: 10px, 20px;
-	margin: 10px, 1%;
+div {
 	overflow: auto;
 }
 
 div img {
 	float: right;
-	margin: 10px;
-	padding: 1%;
-	min-height: 110px;
+	margin: 0 2% 2% 2%;
 	max-width: 100%;
-    max-height: 100%;
 	max-height: 300px;
-	margin-top: 0;
-	
 }
 
-main figcaption {
-  text-align: center;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer {
-  clear: both;
-  font-size: 0.75em;
-  text-align: center;
-  padding: 3px 5%;
-  color: rgb(0,177,225);
+	clear: both;
+	font-size: 0.75em;
+	text-align: center;
+	padding: 3px 5%;
+	color: rgb(0,177,225);
   
-  background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
 }
 
 footer p {
@@ -237,17 +203,14 @@ footer p {
 }
 
 footer ul {
-		padding-left: 0;
-	    margin: 0;
+	padding-left: 0;
+	margin: 0;
 }
 
 footer li {
-	    display: inline-block;
-		margin: 0 5px;
+    display: inline-block;
+	margin: 0 5px;
 }
 
-.italic {
-  font-style: italic;
-}
 
 /* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
