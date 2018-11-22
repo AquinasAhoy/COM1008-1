@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/studentsunion.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Contact Us - Students' Union</title>
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/studentsunion.css">
+		<link rel="icon" type="image/png" href="./images/favicon.png">
+	</head>
+
+	<body id="home">
+
+		<header>
+			<a href="index.html"><img src="./images/logo.png" alt"Students's Union"></a>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html" id="button1" >Home</a>
+				<li class="dropdown"><a class="dropbtn">Areas</a>
+					<div class="dropdown-links">
+						<a href="areasLevel1.html">Level 1</a>
+						<a href="areasLevel2.html">Level 2</a>
+						<a href="areasLevel3.html">Level 3</a>
+						<a href="areasLevel4.html">Level 4</a>
+						<a href="areasLevel5.html">Level 5</a>
+						<a href="areasLevel6.html">Level 6</a>
+					</div>
+				<li><a href="typicalweek.html">Typical Week</a>
+				<li><a href="food.html">Food</a>
+				<li><a href="contact.html" class="active">Contact</a>
+				<li><a href="accessibility.html" id="button2">Accessibility</a>
+			</ul>
+		</nav>
+
+		<main>
+			<h1>Contact</h1>
+
+			<form  method="POST" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl">
+
+				<input name="recipient" type="hidden" value="jebarker1@sheffield.ac.uk,tbtonner1@sheffield.ac.uk">
+				<input name="subject" type="hidden" value="COM1008 Project Contact Form">
+				<input name="redirect" type="hidden"  value="http://stuwww.dcs.shef.ac.uk/people/jebarker1/contactok.html">
   
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
-<link rel="manifest" href="./images/icons/site.webmanifest">
-<link rel="mask-icon" href="./images/icons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="./images/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#006765">
-<meta name="msapplication-config" content="./images/icons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-</head>
+				<textarea name="message" type="text" rows="10" required placeholder="Send us a message..."></textarea>
+				<input name="email" type="email" required placeholder="email@provider.domain">
+				<input type="submit" value="Send">
 
-<body id="home">
+			</form>
 
-	<header>
-		<a href="index.html"><img src="./images/logo.png" alt"Students's Union"></a>
-	</header>
-
-	<nav>
-    <ul>
-	  <li><a href="index.html" id="button1" >Home</a>
-      <li class="dropdown"><a class="dropbtn">Areas</a>
-			<div class="dropdown-links">
-      <a href="areasLevel1.html">Level 1</a>
-      <a href="areasLevel2.html">Level 2</a>
-      <a href="areasLevel3.html">Level 3</a>
-	  <a href="areasLevel4.html">Level 4</a>
-	  <a href="areasLevel5.html">Level 5</a>
-	  <a href="areasLevel6.html">Level 6</a>
-    </div>
-      <li><a href="typicalweek.html">Typical Week</a>
-      <li><a href="food.html">Food</a>
-      <li><a href="contact.html" class="active">Contact</a>
-	  <li><a href="accessibility.html" id="button2">Accessibility</a>
-    </ul>
-  </nav>
-
-	<main>
-		<h1>Contact</h1>
-
-		<form  method="POST" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl">
-
-			<input name="recipient" type="hidden" value="jebarker1@sheffield.ac.uk,tbtonner1@sheffield.ac.uk">
-			<input name="subject" type="hidden" value="COM1008 Project Contact Form">
-			<input name="redirect" type="hidden"  value="http://stuwww.dcs.shef.ac.uk/people/jebarker1/contactok.html">
-  
-			<textarea name="message" type="text" rows="10" required placeholder="Send us a message..."></textarea>
-			<input name="email" type="email" required placeholder="email@provider.domain">
-			<input type="submit" value="Send">
-
-		</form>
-
-		<ul>
-			<li>Tom Tonner: <a href="mailto:tbtonner1@sheffield.ac.uk">tbtonner1@sheffield.ac.uk</a></li>
-			<li>Joseph Barker: <a href="mailto:jebarker1@sheffield.ac.uk">jebarker1@sheffield.ac.uk</a></li>
-		</ul>
+			<ul>
+				<li>Tom Tonner: <a href="mailto:tbtonner1@sheffield.ac.uk">tbtonner1@sheffield.ac.uk</a></li>
+				<li>Joseph Barker: <a href="mailto:jebarker1@sheffield.ac.uk">jebarker1@sheffield.ac.uk</a></li>
+			</ul>
 		 
-	</main>
+		</main>
 
-  <footer> 
-    <p>&copy; Tom Tonner, Joseph Barker, 2018</p>
-  </footer>
+		<footer> 
+			<ul>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="accessibility.html">Accessibility Statement</a></li>
+			</ul>
+			<p>&copy; Tom Tonner, Joseph Barker, 2018</p>
+		</footer>
 
-  
- 
-	
-</body>
+	</body>
 
 </html>
 

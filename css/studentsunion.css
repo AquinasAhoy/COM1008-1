@@ -26,24 +26,27 @@ body {
 
 
 h1{
+	margin-bottom: 0.25em;
 	color: rgb(0,177,225);	
+	font-size: 1.5em;
 }
 
-h1 {  
-  font-size: 1.5em;
-}
+
 
 h2 {  
+	margin-top: 0;
+	margin-bottom: 0.25em;
   font-size: 1.2em;
   color: rgb(0,177,225);	
 }
 
 h3 {  
+margin-top: 0;
   font-size: 1em;
 }
 
 p {
-   margin-bottom: 0.5em;
+   margin-top: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -147,6 +150,7 @@ a:hover {
 main {
   padding: 5px 20px;
   background-color: rgba(0,0,0,0.7);
+  margin-bottom: 2px;
 }
 
 table { 
@@ -178,64 +182,43 @@ textarea {
   line-height: 1.5em;
 }
 
-table tr th:nth-child(1), table tr td:nth-child(1) {
-  padding-left: 0;
-}
-
-main *.highlight {
-  font-weight: bolder;
-}
-
-main article {
-  margin: 20px 0;
-  border-top: 1px solid rgb(200,200,200);
-}
 
 main>img {
   float: right;
-  margin: 10px 0 10px 3%;
+  margin: 10px 0;
 }
 
-main figure {
-  float: right;
-  margin: 10px 0 10px 3%;
+figure {
+	
+}
+
+.container {
+    display: block;
+}
+
+.container2 {
+    display: block;
+	padding: 10px, 20px;
+	margin: 10px, 1%;
+	overflow: auto;
+}
+
+div img {
+	float: right;
+	margin: 10px;
+	padding: 1%;
+	min-height: 110px;
+	max-width: 100%;
+    max-height: 100%;
+	max-height: 300px;
+	margin-top: 0;
+	
 }
 
 main figcaption {
   text-align: center;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~page specific styles~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-table#fixturestable { 
-  margin-left: 5%; 
-}
-
-table#fixturestable tr th:nth-child(1), table#fixturestable tr td:nth-child(1) {
-  text-align: left;
-}
-
-table#fixturestable tr th:nth-child(2), table#fixturestable tr td:nth-child(2) {
-  text-align: right;
-}
-
-table#fixturestable tr th:nth-child(3) {
-  width: 15%;
-}
-
-table#fixturestable tr th:nth-child(3), table#fixturestable tr td:nth-child(3) {
-  text-align: center;
-}
-
-table#fixturestable tr th:nth-child(4), table#fixturestable tr td:nth-child(4) {
-  text-align: left;
-}
-
-table#aboutustable  tr  td:first-child {
-  color: rgb(0,177,225);
-}
-	
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -245,6 +228,22 @@ footer {
   text-align: center;
   padding: 3px 5%;
   color: rgb(0,177,225);
+  
+  background-color: rgba(0,0,0,0.3);
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer ul {
+		padding-left: 0;
+	    margin: 0;
+}
+
+footer li {
+	    display: inline-block;
+		margin: 0 5px;
 }
 
 .italic {
