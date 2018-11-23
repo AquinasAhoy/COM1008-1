@@ -11,37 +11,30 @@ body {
 	line-height: 1.5em;
 	text-align: justify;
 	min-width: 260px;
-	max-width: 1000px;
+	max-width: 1024px;
 	margin: auto;
 }
 
 
 h1{
+	font-size: 1.6em;
 	margin-top: 0;
 	margin-bottom: 0.25em;
-	font-size: 2em;
 	color: rgb(0,177,225);
 }
 
 
 
 h2 {
+	font-size: 1.4em;
 	margin-top: 0;
 	margin-bottom: 0.25em;
-	font-size: 1.5em;
 	color: rgb(0,177,225);
 }
 
-h3 {
-	margin-top: 0;
-	margin-bottom: 0.25em;
-	font-size: 1.5em;
-	color: rgb(0,177,225);
-}
 
 p {
 	margin-top: 0;
-	font-size: 1.2em;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -67,7 +60,6 @@ nav {
 	margin-bottom: 2px;
   	color: rgb(0,177,225);
 	background-color: rgba(0,0,0,0.7);
-	font-size: 1.5em;
 }
 
 nav ul {
@@ -94,17 +86,7 @@ nav a {
 	display: none;
 }
 
-@media (min-width: 430px) {
-	#rightmost {
-		display: block;
-	}
-}
 
-@media (min-width: 319px) {
-	#rightmost2nd {
-		display: block;
-	}
-}
 
 .dropdown-links {
     display: none;
@@ -183,8 +165,10 @@ div {
 }
 
 div img {
+	float: right;
 	margin: 0 2% 2% 2%;
 	max-width: 100%;
+	max-height: 300px;
 }
 
 
@@ -193,7 +177,7 @@ div img {
 
 footer {
 	clear: both;
-	font-size: 1em;
+	font-size: 0.75em;
 	text-align: center;
 	padding: 3px 5%;
 	color: rgb(0,177,225);
@@ -217,3 +201,42 @@ footer li {
 
 
 /* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 430px) {
+	#rightmost {
+		display: block;
+	}
+}
+
+@media (min-width: 319px) {
+	#rightmost2nd {
+		display: block;
+	}
+}
+
+@media (min-width: 2048px) {
+	nav {
+		font-size: 1.5em;
+	}
+	
+	footer {
+		font-size: 1em;
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
+	
+	div img {
+		float: none;
+		max-height: 100%;
+	}
+	
+	h1{
+		font-size: 2em;
+	}
+	
+	h2{
+		font-size: 1.5em;
+	}
+}
