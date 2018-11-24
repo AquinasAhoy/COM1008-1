@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- Code for the head of the page -->
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Typical Week - Students' Union</title>
-		<link rel="stylesheet" href="./css/normalize.css">
-		<link rel="stylesheet" href="./css/studentsunion.css">
-		<link rel="icon" type="image/png" href="./images/favicon.png">
+		<meta charset="utf-8"> <!-- Setting character-set to UTS-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport to change scaling for different devices -->
+		<title>Home - Students' Union</title> <!-- Setting title of page -->
+		<link rel="stylesheet" href="./css/normalize.css"> <!-- Linking to normilize stylesheet -->
+		<link rel="stylesheet" href="./css/studentsunion.css"> <!-- Linking to our custom made stylesheet -->
+		<link rel="icon" type="image/png" href="./images/favicon.png"> <!-- Setting the icon of the page -->
 	</head>
 
 	<body id="home">
 
+		<!-- Code for the main header of the page -->
 		<header>
-			<a href="index.html"><img src="./images/logo.png" alt"Students's Union" width = 40%></a>
+			<a href="index.html"><img src="./images/logo.png" alt"Students's Union"></a> <!-- Header consists of edited SU logo -->
 		</header>
 
+		<!-- Code for the nav bar -->
 		<nav>
 			<ul>
-				<li><a href="index.html" id="leftmost">Home</a>
+				<!-- Class active = highlighted on selected page, id's help CSS identify where location of nav bar text is -->
+				<li><a href="index.html" id="leftmost" class="active">Home</a></li>
 				<li class="dropdown"><a class="dropbtn">Areas</a>
 					<div class="dropdown-links">
 						<a href="areasLevel1.html">Level 1</a>
@@ -28,13 +32,15 @@
 						<a href="areasLevel5.html">Level 5</a>
 						<a href="areasLevel6.html">Level 6</a>
 					</div>
-				<li><a href="typicalweek.html" class="active">Typical Week</a>
-				<li><a href="food.html">Food</a>
-				<li><a href="contact.html" id="rightmost2nd">Contact</a>
-				<li><a href="accessibility.html" id="rightmost">Accessibility</a>
+				</li>
+				<li><a href="typicalweek.html">Typical Week</a></li>
+				<li><a href="food.html">Food</a></li>
+				<li><a href="contact.html" id="rightmost2nd">Contact</a></li>
+				<li><a href="accessibility.html" id="rightmost">Accessibility</a></li>
 			</ul>
 		</nav>
 
+		<!-- Code for main content -->
 		<main>
 			<p>
 				In this page, we'll look into the typical week of a Computer Scientist and how they can best use the SU building
@@ -45,8 +51,18 @@
 				In those hours the SU building is a great place to go to fill the time effectivly, and still being in the
 				University campus makes it easy to get anywhere in the University for your next lesson.
 			</p>
+			<p>
+				Please press the links below to go directly to the corrosponding sections:
+			</p>
+			<ul> <!-- List of different areas of the webpage with links to those areas -->
+				<li><a href="#grabbingFood">Grabbing something to eat for lunch</a></li>
+				<li><a href="#studyAreas">Study areas</a></li>
+				<li><a href="#socialise">Places to socialise</a></li>
+				<li><a href="#outsideUni">Things to do outside university</a></li>
+				<li><a href="#myWeek">My typical week</a></li>
+			</ul>
 
-			<h1>Grabbing something to eat for lunch</h1>
+			<a id="grabbingFood"><h1>Grabbing something to eat for lunch</h1></a> <!-- One of main headers -->
 			<p>
 				The SU building is the perfect place to grab food in your free time. As discussed in depth in our <a href="food.html">food</a>
 				page the SU building has everything you could want from fast food to fine dining and everything in between.
@@ -56,8 +72,9 @@
 				to eat straight away. You won't be disappointed with the food nor the price, and in a quick pinch, there's nothing better.
 				We discuss more on our <a href="food.html">food</a> page if you'd like to find out more.
 			</p>
+			<!-- here!!!!!!!! -->
 			<figure>
-				<img src="./images/properPasty2.jpg" alt"Picture of the interval" width=100%>
+				<img src="./images/properPasty2.jpg" alt="Picture of proper pasty" title="Proper Pasty" width=100%> <!-- Picture of proper pasty -->
 			</figure>
 			<p>
 				Our pick for a casual meal is 'The Interval' bar and cafe with a variety of modern takes on traditional Italian food, including;
@@ -77,7 +94,7 @@
 				<img src="./images/inox2.jpg" alt"Picture of inox dine" width=100%>
 			</figure>
 
-			<h1>Study areas</h1>
+			<a id="studyAreas"><h1>Study areas</h1></a> <!-- One of main headers -->
 			<p>
 				The SU has lots of study areas for students to use in their free time, which we find very useful to use due to its easy access
 				and quiet environments. It's much easier to get work done in free time than at home as well as you're left without any distractions.
@@ -96,7 +113,7 @@
 				To find out more about SU level 4 visit our page on the various <a href="areas.html">areas</a> of the SU building.
 			</p>
 
-			<h1>Places to socialise</h1>
+			<a id="socialise"><h1>Places to socialise</h1></a> <!-- One of main headers -->
 			<p>
 				The SU is a great place to socialise with friends if multiple people have frees at the same time (which will be common in
 				first year).
@@ -119,7 +136,7 @@
 				Bar One's cheap drinks and lively atmosphere always make it a great place to socialise with friends.
 			</p>
 
-			<h1>Things to do outside university</h1>
+			<a id="outsideUni"><h1>Things to do outside university</h1></a> <!-- One of main headers -->
 			<p>
 				Outside university, the SU can be good to do other things too and not just be about university work. The SU has a small supermarket called
 				'Our shop' where you can buy any of your necessities for the week. The SU can be a great place to grab food during the weekend too, as all
@@ -134,7 +151,7 @@
 				great movie. Find out more on our <a href="areasLevel2.html">SU level 2 page</a>.
 			</p>
 
-			<h1>My typical week</h1>
+			<a id="myWeek"><h1>My typical week</h1></a> <!-- One of main headers -->
 			<p>
 				In my typical week, I use the SU in many different ways. Depending on the day and what assignments and work I have to complete,
 			 	my typical routine can change but on an average week I have a large free on Mondays, a one hour free on Tuesdays, small free on
@@ -158,12 +175,14 @@
 
 		</main>
 
+		<!-- Code for footer content -->
 		<footer>
-			<ul>
+			<ul> <!-- List of three footer pages -->
 				<li><a href="contact.html">Contact Us</a></li>
 				<li><a href="accessibility.html">Accessibility Statement</a></li>
 				<li><a href="copyright.html">Copyright</a></li>
 			</ul>
+			<!-- Copyright text at bottom of every screen -->
 			<p>Copyright &copy; 2018 Tom Tonner, Joseph Barker. All rights reserved.</p>
 		</footer>
 
