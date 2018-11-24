@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- Code for the head of the page -->
 	<head>
-	    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	    <title>Level 2 - Students' Union</title>
-	    <link rel="stylesheet" href="./css/normalize.css">
-	    <link rel="stylesheet" href="./css/studentsunion.css">
-		<link rel="icon" type="image/png" href="./images/favicon.png">
+		<meta charset="utf-8"> <!-- Setting character-set to UTS-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport to change scaling for different devices -->
+		<title>Home - Students' Union</title> <!-- Setting title of page -->
+		<link rel="stylesheet" href="./css/normalize.css"> <!-- Linking to normilize stylesheet -->
+		<link rel="stylesheet" href="./css/studentsunion.css"> <!-- Linking to our custom made stylesheet -->
+		<link rel="icon" type="image/png" href="./images/favicon.png"> <!-- Setting the icon of the page -->
 	</head>
 
 	<body id="home">
 
+		<!-- Code for the main header of the page -->
 		<header>
-			<a href="index.html"><img src="./images/logo.png" alt"Students's Union" width = 40%></a>
+			<a href="index.html"><img src="./images/logo.png" alt="Students's Union"></a> <!-- Header consists of edited SU logo -->
 		</header>
 
+		<!-- Code for the nav bar -->
 		<nav>
 			<ul>
-				<li><a href="index.html" id="leftmost">Home</a>
-				<li class="dropdown"><a class="dropbtn"  class="active">Areas</a>
+				<!-- Class active = highlighted on selected page, id's help CSS identify where location of nav bar text is -->
+				<li><a href="index.html" id="leftmost">Home</a></li>
+				<li class="dropdown"><a class="active" class="dropbtn">Areas</a>
 					<div class="dropdown-links">
 						<a href="areasLevel1.html">Level 1</a>
-						<a href="areasLevel2.html">Level 2</a>
-	    				<a href="areasLevel3.html">Level 3</a>
-		  				<a href="areasLevel4.html">Level 4</a>
+						<a href="areasLevel2.html" class="active">Level 2</a>
+						<a href="areasLevel3.html">Level 3</a>
+						<a href="areasLevel4.html">Level 4</a>
 						<a href="areasLevel5.html">Level 5</a>
-		  				<a href="areasLevel6.html">Level 6</a>
+						<a href="areasLevel6.html">Level 6</a>
 					</div>
-				<li><a href="typicalweek.html">Typical Week</a>
-				<li><a href="food.html">Food</a>
-				<li><a href="contact.html" id="rightmost2nd">Contact</a>
-				<li><a href="accessibility.html" id="rightmost">Accessibility</a>
+				</li>
+				<li><a href="typicalweek.html">Typical Week</a></li>
+				<li><a href="food.html">Food</a></li>
+				<li><a href="contact.html" id="rightmost2nd">Contact</a></li>
+				<li><a href="accessibility.html" id="rightmost">Accessibility</a></li>
 			</ul>
 		</nav>
 
@@ -39,21 +44,17 @@
 			<h1>Areas: Level 2</h1>
 			<p>
 				Below is the key for level 2. All the images provided by the
-				<a href = https://su.Sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps>official SU website</a>.
+				<a href = "https://su.Sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps" target="blank">official SU website</a>.
 			</p>
 			<figure>
-				<a href = https://su.Sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps>
-					<div class="key"><img src="./images/suKey.png" alt"SU Key for level maps"></div>
-				</a>
+				<div class="key"><img src="./images/suKey.png" alt="SU Key for level maps" title="SU Key"></div>  <!-- Picture of SU Key-->
 			</figure>
 			<p>
 				Below is the map from the SU which shows the entire plan of level 2, complete with the 'Foundry', the SU Auditorium
 				and many more.
 			</p>
 			<figure>
-				<a href = https://su.Sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps>
-					<img src="./images/suLevel2.png" alt"SU Level 2 map" width=100%>
-				</a>
+				<img src="./images/suLevel2.png" alt="SU Level 2 map" title="Level 2" width=100%> <!-- Picture of Level 2 Map-->
 			</figure>
 
 			<h2>Interval</h2>
@@ -62,11 +63,11 @@
 				sophisticated cafe bar serving a selection of fine wine, continental beers, Fairtrade hot drinks and tasty cuisine".
 			</p>
 			<figure>
-				<img src="./images/interval2.jpg" alt"Picture of the Interval" width=100%>
+				<img src="./images/interval2.jpg" alt="Picture of the Interval" title="The Interval" width=100%> <!-- Picture of The Interval-->
 			</figure>
 			<p>
 				We describe more about the Interval in our <a href="food.html">Food</a> page. And you can view the menu and more information on the
-				Interval cafe and bar on the <a href="https://su.Sheffield.ac.uk/eat-drink-shop/interval">Official SU's web page</a> on the Interval.
+				Interval cafe and bar on the <a href="https://su.Sheffield.ac.uk/eat-drink-shop/interval" target="blank">Official SU's web page</a> on the Interval.
 			</p>
 
 			<h2>Foundry</h2>
@@ -75,10 +76,10 @@
 				themed nights. All of this along with cheap and affordable drinks makes the foundry a must try venue for students.
 			</p>
 			<figure>
-				<img src="./images/foundry.jpg" alt"Picture of the Foundry" width=100%>
+				<img src="./images/foundry.jpg" alt="Picture of the Foundry" title="Foundry" width=100%> <!-- Picture of Foundry-->
 			</figure>
 			<p>
-				More information on the foundry can be found on the <a href="https://foundrysu.com/">Official Foundry web page</a>.
+				More information on the foundry can be found on the <a href="https://foundrysu.com/" target="blank">Official Foundry web page</a>.
 			</p>
 
 			<h2>Auditorium</h2>
@@ -91,7 +92,8 @@
 				the chance to find something for them at this unique cinema.
 			</p>
 			<p>
-				To find out about the films being shown and to buy tickets visit the <a href="https://tickets.sheffieldstudentsunion.com/more-inside/">
+				To find out about the films being shown and to buy tickets visit the <a href="https://tickets.sheffieldstudentsunion.com/more-inside/"
+				target="blank">
 				SU's page</a> for the events.
 			</p>
 
@@ -101,7 +103,7 @@
 				LGBT lounge, music room and other offices as shown on the map above.
 			</p>
 			<figure>
-				<img src="./images/interval5.jpg" alt"Picture outside the SU level 2" width=100%>
+				<img src="./images/interval5.jpg" alt="Picture outside the SU level 2" title="Outside Level 2" width=100%> <!-- Picture of Outside Level 2 -->
 			</figure>
 			<p>
 				The toilets next to the auditorium have also changed to gender-neutral toilets, and some of the offices are closed off at this time
@@ -109,17 +111,19 @@
 			</p>
 
 			<p>
-				To find out more visit the <a href="https://su.Sheffield.ac.uk/">SU's website</a>.
+				To find out more visit the <a href="https://su.Sheffield.ac.uk/" target="blank">SU's website</a>.
 			</p>
 
 		</main>
 
+		<!-- Code for footer content -->
 		<footer>
-			<ul>
+			<ul> <!-- List of three footer pages -->
 				<li><a href="contact.html">Contact Us</a></li>
 				<li><a href="accessibility.html">Accessibility Statement</a></li>
 				<li><a href="copyright.html">Copyright</a></li>
 			</ul>
+			<!-- Copyright text at bottom of every screen -->
 			<p>Copyright &copy; 2018 Tom Tonner, Joseph Barker. All rights reserved.</p>
 		</footer>
 

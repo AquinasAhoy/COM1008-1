@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- Code for the head of the page -->
 	<head>
-	    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	    <title>Level 5 - Students' Union</title>
-	    <link rel="stylesheet" href="./css/normalize.css">
-	    <link rel="stylesheet" href="./css/studentsunion.css">
-		<link rel="icon" type="image/png" href="./images/favicon.png">
+		<meta charset="utf-8"> <!-- Setting character-set to UTS-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport to change scaling for different devices -->
+		<title>Home - Students' Union</title> <!-- Setting title of page -->
+		<link rel="stylesheet" href="./css/normalize.css"> <!-- Linking to normilize stylesheet -->
+		<link rel="stylesheet" href="./css/studentsunion.css"> <!-- Linking to our custom made stylesheet -->
+		<link rel="icon" type="image/png" href="./images/favicon.png"> <!-- Setting the icon of the page -->
 	</head>
 
 	<body id="home">
 
+		<!-- Code for the main header of the page -->
 		<header>
-			<a href="index.html"><img src="./images/logo.png" alt"Students's Union" width = 40%></a>
+			<a href="index.html"><img src="./images/logo.png" alt="Students's Union"></a> <!-- Header consists of edited SU logo -->
 		</header>
 
+		<!-- Code for the nav bar -->
 		<nav>
 			<ul>
-				<li><a href="index.html" id="leftmost">Home</a>
-				<li class="dropdown"><a class="dropbtn" class="active">Areas</a>
+				<!-- Class active = highlighted on selected page, id's help CSS identify where location of nav bar text is -->
+				<li><a href="index.html" id="leftmost">Home</a></li>
+				<li class="dropdown"><a class="active" class="dropbtn">Areas</a>
 					<div class="dropdown-links">
 						<a href="areasLevel1.html">Level 1</a>
 						<a href="areasLevel2.html">Level 2</a>
 						<a href="areasLevel3.html">Level 3</a>
 						<a href="areasLevel4.html">Level 4</a>
-						<a href="areasLevel5.html">Level 5</a>
+						<a href="areasLevel5.html" class="active">Level 5</a>
 						<a href="areasLevel6.html">Level 6</a>
 					</div>
-				<li><a href="typicalweek.html">Typical Week</a>
-				<li><a href="food.html">Food</a>
-				<li><a href="contact.html" id="rightmost2nd">Contact</a>
-				<li><a href="accessibility.html" id="rightmost">Accessibility</a>
+				</li>
+				<li><a href="typicalweek.html">Typical Week</a></li>
+				<li><a href="food.html">Food</a></li>
+				<li><a href="contact.html" id="rightmost2nd">Contact</a></li>
+				<li><a href="accessibility.html" id="rightmost">Accessibility</a></li>
 			</ul>
 		</nav>
 
@@ -39,17 +44,17 @@
 			<h1>Areas: Level 5</h1>
 			<p>
 				Below is the key for level 5. All the images provided by the
-				<a href = https://su.sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps>official SU website</a>.
+				<a href = "https://su.sheffield.ac.uk/sheffield-su/how-to-find-us/building-maps" target="blank">official SU website</a>.
 			</p>
 			<figure>
-				<div class="key"><img src="./images/suKey.png" alt"SU Key for level maps"></div>
+				<div class="key"><img src="./images/suKey.png" alt="SU Key for level maps" title="SU Key"></div> <!-- Picture of SU key -->
 			</figure>
 			<p>
 				Below is the map from the SU which shows the entire plan of level 5, which comprises mostly of conference rooms and
 				the SU's 'Inox Dine'.
 			</p>
 			<figure>
-				<img src="./images/suLevel5.png" alt"SU Level 5 map" width=60%>
+				<img src="./images/suLevel5.png" alt="SU Level 5 map" title="Level 5" width=60%> <!-- Picture of Level 5 -->
 			</figure>
 
 			<h2>Inox Dine</h2>
@@ -59,10 +64,10 @@
 				Awards'.
 			</p>
 			<figure>
-				<img src="./images/inox5.jpg" alt"Picture of inox dine" width=100%>
+				<img src="./images/inox5.jpg" alt="Picture of inox dine" title="Inox Dine" width=100%> <!-- Picture of Inox Dine -->
 			</figure>
 			<p>
-				You can book a table <a href="http://inoxdine.co.uk/reservation/">here</a> or visit their <a href="http://inoxdine.co.uk/">website</a>
+				You can book a table <a href="http://inoxdine.co.uk/reservation/" target="blank">here</a> or visit their <a href="http://inoxdine.co.uk/" target="blank">website</a>
 				to find out more about thier menu's, events and reviews for the restaurant.
 			</p>
 
@@ -72,20 +77,22 @@
 				about if you're ever in need of going to the various conference rooms there.
 			</p>
 			<figure>
-				<img src="./images/confRoom.jpg" alt"Picture of one of the conference rooms" width=100%>
+				<img src="./images/confRoom.jpg" alt="Picture of one of the conference rooms" title="One of the Conference Rooms" width=100%> <!-- Picture of One of the Conference Rooms -->
 			</figure>
 			<p>
-				To find out more visit the <a href="https://su.Sheffield.ac.uk/">SU's website</a>.
+				To find out more visit the <a href="https://su.Sheffield.ac.uk/" target="blank">SU's website</a>.
 			</p>
 
 		</main>
 
+		<!-- Code for footer content -->
 		<footer>
-			<ul>
+			<ul> <!-- List of three footer pages -->
 				<li><a href="contact.html">Contact Us</a></li>
 				<li><a href="accessibility.html">Accessibility Statement</a></li>
 				<li><a href="copyright.html">Copyright</a></li>
 			</ul>
+			<!-- Copyright text at bottom of every screen -->
 			<p>Copyright &copy; 2018 Tom Tonner, Joseph Barker. All rights reserved.</p>
 		</footer>
 

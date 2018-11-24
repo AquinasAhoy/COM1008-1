@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- Code for the head of the page -->
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Food - Students' Union</title>
-		<link rel="stylesheet" href="./css/normalize.css">
-		<link rel="stylesheet" href="./css/studentsunion.css">
-		<link rel="icon" type="image/png" href="./images/favicon.png">
+		<meta charset="utf-8"> <!-- Setting character-set to UTS-8 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport to change scaling for different devices -->
+		<title>Home - Students' Union</title> <!-- Setting title of page -->
+		<link rel="stylesheet" href="./css/normalize.css"> <!-- Linking to normilize stylesheet -->
+		<link rel="stylesheet" href="./css/studentsunion.css"> <!-- Linking to our custom made stylesheet -->
+		<link rel="icon" type="image/png" href="./images/favicon.png"> <!-- Setting the icon of the page -->
 	</head>
 
 	<body id="home">
 
+		<!-- Code for the main header of the page -->
 		<header>
-			<a href="index.html"><img src="./images/logo.png" alt"Students's Union" width = 40%></a>
+			<a href="index.html"><img src="./images/logo.png" alt="Students's Union"></a> <!-- Header consists of edited SU logo -->
 		</header>
 
+		<!-- Code for the nav bar -->
 		<nav>
 			<ul>
-				<li><a href="index.html" id="leftmost">Home</a>
+				<!-- Class active = highlighted on selected page, id's help CSS identify where location of nav bar text is -->
+				<li><a href="index.html" id="leftmost">Home</a></li>
 				<li class="dropdown"><a class="dropbtn">Areas</a>
 					<div class="dropdown-links">
 						<a href="areasLevel1.html">Level 1</a>
@@ -28,26 +32,41 @@
 						<a href="areasLevel5.html">Level 5</a>
 						<a href="areasLevel6.html">Level 6</a>
 					</div>
-				<li><a href="typicalweek.html">Typical Week</a>
-				<li><a href="food.html" class="active">Food</a>
-				<li><a href="contact.html" id="rightmost2nd">Contact</a>
-				<li><a href="accessibility.html" id="rightmost">Accessibility</a>
+				</li>
+				<li><a href="typicalweek.html">Typical Week</a></li>
+				<li><a href="food.html" class="active">Food</a></li>
+				<li><a href="contact.html" id="rightmost2nd">Contact</a></li>
+				<li><a href="accessibility.html" id="rightmost">Accessibility</a></li>
 			</ul>
 		</nav>
 
+		<!-- Code for main content -->
 		<main>
 			<p>
 				In this page, we'll talk about and explore the various places to grab some food in the SU building, and giving you
 				our opinion of each one.
 			</p>
+			<p>
+				Please press the links below to go directly to the corrosponding sections:
+			</p>
+			<ul> <!-- List of different areas of the webpage with links to those areas -->
+				<li><a href="#interval">Interval Cafe Bar</a></li>
+				<li><a href="#barOne">Bar One</a></li>
+				<li><a href="#grillAndGo">Grill & Go</a></li>
+				<li><a href="#coffeeRevs">Coffee Revolution</a></li>
+				<li><a href="#newLeaf">New Leaf</a></li>
+				<li><a href="#viewDeli">View Deli</a></li>
+				<li><a href="#properPasty">Proper Pasty</a></li>
+				<li><a href="#inox">Inox Dine</a></li>
+			</ul>
 
-			<h1>Interval Cafe Bar</h1>
+			<a id="interval"><h1>Interval Cafe Bar</h1></a> <!-- One of main headers -->
 			<p>
 				One of the main attractions of the SU's level 2 is the 'Interval' cafe and bar which describes itself as a "laid back and
 				sophisticated cafe bar serving a selection of fine wine, continental beers, Fairtrade hot drinks, and tasty cuisine".
 			</p>
 			<figure>
-				<img src="./images/interval4.jpg" alt"Picture of the interval" width=100%>
+				<img src="./images/interval4.jpg" alt="Picture of the interval" title="The Interval" width=100%> <!-- Picture of the Interval -->
 			</figure>
 			<p>
 				The Interval Bar and Cafe is a perfect location to go for a nice lunch or dinner. Their extensive lunch and dinner menus leave
@@ -61,7 +80,7 @@
 				The pleasant atmosphere and comfy decore all add to the experience making your time there all the more memorable.
 			</p>
 			<figure>
-				<img src="./images/interval6.jpg" alt"Picture of the interval" width=100%>
+				<img src="./images/interval6.jpg" alt="Picture of the interval" title="The Interval" width=100%> <!-- Picture of the Interval -->
 			</figure>
 			<p>
 				I would recommend the arancini for a starter, the linguini meatball marinara for main, and chocolate brownie stack for
@@ -69,17 +88,17 @@
 				which cut the cost down significantly.
 			</p>
 			<p>
-				Their full menus and more can be found at the <a href="https://su.sheffield.ac.uk/eat-drink-shop/interval">SU's page</a>
+				Their full menus and more can be found at the <a href="https://su.sheffield.ac.uk/eat-drink-shop/interval" target="blank">SU's page</a>
 				for the Interval.
 			</p>
 
-			<h1>Bar One</h1>
+			<a id="barOne"><h1>Bar One</h1></a> <!-- One of main headers -->
 			<p>
 				Inside level one of the SU we have 'Bar One', a Students' Union bar which prides itself on its
 				"burgers, quizzes, sport and friendly staff!".
 			</p>
 			<figure>
-				<img src="./images/barOne4.jpg" alt"Picture of bar one" width=100%>
+				<img src="./images/barOne4.jpg" alt="Picture of bar one" title="Bar One" width=100%> <!-- Picture of Bar One -->
 			</figure>
 			<p>
 				As a more lively venue, Bar One is the go-to venue for students wanting a cheap night out or a place to hang out and have a
@@ -90,18 +109,18 @@
 				even serve as a great place to grab a pub lunch and watch the football on the big screens.
 			</p>
 			<p>
-				For more information on Bar One's and its menus visit the <a href="https://su.sheffield.ac.uk/eat-drink-shop/bar-one">SU's page</a>
+				For more information on Bar One's and its menus visit the <a href="https://su.sheffield.ac.uk/eat-drink-shop/bar-one" target="blank">SU's page</a>
 				for the Bar One.
 			</p>
 
-			<h1>Grill & Go</h1>
+			<a id="grillAndGo"><h1>Grill & Go</h1></a> <!-- One of main headers -->
 			<p>
 				On the third floor of the SU, we have 'Grill & Go', a "campus favourite...perfect for those on the go". They offer
 				a variety of different fast foods including  "burritos, hot wraps and salad boxes", all of which are "cooked fresh
 				and made to order".
 			</p>
 			<figure>
-				<img src="./images/grillAndGo1.jpg" alt"Picture of grill and go" width=100%>
+				<img src="./images/grillAndGo1.jpg" alt="Picture of grill and go" title="Grill and Go" width=100%> <!-- Picture of Grill and Go -->
 			</figure>
 			<p>
 				Grill & Go's quick, cheap and easy food is a must try at some point during your time here in Sheffield. They offer a wide range
@@ -114,49 +133,49 @@
 				I would recommend the tandoori chicken burrito with plain wrap, 3 different salads of your choice and chilli sauce on top.
 			</p>
 			<p>
-				For more information on Grill & Go click the link <a href="https://su.sheffield.ac.uk/eat-drink-shop/grill-go">here</a>.
+				For more information on Grill & Go click the link <a href="https://su.sheffield.ac.uk/eat-drink-shop/grill-go" target="blank">here</a>.
 			</p>
 
-			<h1>Coffee Revolution</h1>
+			<a id="coffeeRevs"><h1>Coffee Revolution</h1></a> <!-- One of main headers -->
 			<p>
 				Coffee Revolution is the SU's own coffee shop and is a great place to "meet friends, study, or just for taking time out to treat yourself".
 				They offer a variety of different coffees, teas, smoothies, as well as some breakfast options.
 			</p>
 			<figure>
-				<img src="./images/coffeeRevs3.jpg" alt"Picture of coffee revolution" width=100%>
+				<img src="./images/coffeeRevs3.jpg" alt="Picture of coffee revolution" title="Coffee Revolution" width=100%> <!-- Picture of Coffee Revolution -->
 			</figure>
 			<p>
 				Their food options range from hot sandwiches, breakfast, or even waffles. I'd recommend the filled croissants  (I usually go for
 				ham and cheese) as they are always hot and delicious.
 			</p>
 			<p>
-				To find out more visit the <a href = "https://su.sheffield.ac.uk/eat-drink-shop/coffee-revolution">official SU's web page</a> on
+				To find out more visit the <a href = "https://su.sheffield.ac.uk/eat-drink-shop/coffee-revolution" target="blank">official SU's web page</a> on
 				coffee revolution.
 			</p>
 
-			<h1>New Leaf</h1>
+			<a id="newLeaf"><h1>New Leaf</h1></a> <!-- One of main headers -->
 			<p>
 				If you're looking for a more healthy option then make sure to try out 'New Leaf' - "Sheffield Students' Union's innovative Salad Bar",
 				where you can "create the perfect take away salad or wrap for yourself".
 			</p>
 			<figure>
-				<img src="./images/newLeaf.jpg" alt"Picture of new leaf" width=100%>
+				<img src="./images/newLeaf.jpg" alt="Picture of new leaf" title="New Leaf" width=100%> <!-- Picture of New Leaf -->
 			</figure>
 			<p>
 				Forget your boring packed-lunch salad, 'New Leaf' offers hundreds of combinations for you to pick from, all fresh and ready to
 				eat.
 			</p>
 			<p>
-				To find out more visit the <a href="https://su.sheffield.ac.uk/eat-drink-shop/new-leaf">SU's page</a>
+				To find out more visit the <a href="https://su.sheffield.ac.uk/eat-drink-shop/new-leaf" target="blank">SU's page</a>
 			</p>
 
-			<h1>View Deli</h1>
+			<a id="viewDeli"><h1>View Deli</h1></a> <!-- One of main headers -->
 			<p>
 				The view deli is the SU's deli which hosts "freshly made vegetarian, vegan and gluten-free treats and tasty lunches" on the 4th floor
 				of the SU building.
 			</p>
 			<figure>
-				<img src="./images/viewDeli2.jpg" alt"Picture of the view deli" width=100%>
+				<img src="./images/viewDeli2.jpg" alt="Picture of the view deli" title="View Deli" width=100%> <!-- Picture of View Deli -->
 			</figure>
 			<p>
 				If you're vegan or vegetarian the view deli is likely to become your new favourite cafe in or around Sheffield.
@@ -165,32 +184,32 @@
 				a great place to sit and enjoy your food with some friends.
 			</p>
 			<p>
-				You can find out more information at the <a href="http://withus.com/hustleandbustle/the-view-deli/">withUS web page</a>
+				You can find out more information at the <a href="http://withus.com/hustleandbustle/the-view-deli/" target="blank">withUS web page</a>
 				about the view deli.
 			</p>
 
-			<h1>Proper Pasty</h1>
+			<a id="properPasty"><h1>Proper Pasty</h1></a> <!-- One of main headers -->
 			<p>
 				Located on Level 3 is the 'Proper Pasty' shop. Offering up a mouth-watering selection of handmade, traditional pasties and pizzas,
 				this small shop is the perfect place for students who want to grab a quick bite to eat. With a limited edition pasty brought out each
 				month, there is always something exciting and new to try.
 			</p>
 			<figure>
-				<img src="./images/properPasty1.jpg" alt"Picture of the proper pasty shop" width=100%>
+				<img src="./images/properPasty1.jpg" alt="Picture of the proper pasty shop" title="Proper Pasty" width=100%> <!-- Picture of Proper Pasty  -->
 			</figure>
 			<p>
-				To find out more about the 'Proper Pasty Company' please visit <a href = "https://su.sheffield.ac.uk/eat-drink-shop/proper-pasty">
+				To find out more about the 'Proper Pasty Company' please visit <a href = "https://su.sheffield.ac.uk/eat-drink-shop/proper-pasty" target="blank">
 				official SU's web page</a>.
 			</p>
 
-			<h1>Inox Dine</h1>
+			<a id="inox"><h1>Inox Dine</h1></a> <!-- One of main headers -->
 			<p>
 				On the 5th floor of the SU lies the high-end restaurant, cafe, and lounge bar 'Inox' which hosts business lunches, stylish evening dinners,
 				afternoon tea and much more. It's currently being nominated for the 'Best high end restaurant in Sheffield' award in the 'Sheffield Social
 				Awards'.
 			</p>
 			<figure>
-				<img src="./images/inox1.jpg" alt"Picture of inox dine" width=100%>
+				<img src="./images/inox1.jpg" alt="Picture of inox dine" title="Inox Dine" width=100%> <!-- Picture of Inox Dine -->
 			</figure>
 			<p>
 				I would recommend the chicken or cauliflower satay with Pak Choi, Toasted Peanuts and Pickled Chillies. This dish is perfect
@@ -198,21 +217,23 @@
 				dish.
 			</p>
 			<figure>
-				<img src="./images/inox6.jpg" alt"Picture of inox dine" width=100%>
+				<img src="./images/inox6.jpg" alt="Picture of inox dine" title="Inox Dine" width=100%> <!-- Picture of Inox Dine -->
 			</figure>
 			<p>
-				You can book a table <a href="http://inoxdine.co.uk/reservation/">here</a> or visit their <a href="http://inoxdine.co.uk/">website</a>
-				to find out more about thier menu's, events and reviews for the restaurant.
+				You can book a table <a href="http://inoxdine.co.uk/reservation/" target="blank">here</a> or visit their
+				<a href="http://inoxdine.co.uk/" target="blank">website</a> to find out more about thier menu's, events and reviews for the restaurant.
 			</p>
 
 		</main>
 
+		<!-- Code for footer content -->
 		<footer>
-			<ul>
+			<ul> <!-- List of three footer pages -->
 				<li><a href="contact.html">Contact Us</a></li>
 				<li><a href="accessibility.html">Accessibility Statement</a></li>
 				<li><a href="copyright.html">Copyright</a></li>
 			</ul>
+			<!-- Copyright text at bottom of every screen -->
 			<p>Copyright &copy; 2018 Tom Tonner, Joseph Barker. All rights reserved.</p>
 		</footer>
 
