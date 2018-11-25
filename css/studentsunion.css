@@ -4,7 +4,7 @@
 /* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 :root {
-	--font-size: 1em;
+	--font-size: 16px;
 	--line-height: 1.5em;
 }
 
@@ -23,7 +23,7 @@ body {
 	line-height: var(--line-height);
 	font-size: var(--font-size);
 	text-align: justify;
-	min-width: 273px;
+	min-width: 260px;
 	max-width: 1024px;
 	margin: auto;
 }
@@ -73,6 +73,8 @@ nav {
 	margin-bottom: 2px;
   	color: rgb(0,177,225);
 	background-color: rgba(0,0,0,0.7);
+	
+	
 }
 
 
@@ -80,17 +82,20 @@ nav {
 nav ul {
 	padding: 0;
 	margin: 0;
+	font-size: 0;
 }
 
 nav ul li {
 	display: inline-block;
+	font-size: var(--font-size);
 }
 
 nav a {
-	padding: 4px 7px;
+	padding: 6px 7px;
 	display: block;
 	text-decoration: none;
 	outline: none;
+	
 }
 
 #leftmost{
@@ -101,7 +106,7 @@ nav a {
 	display: none;
 }
 
-@media (min-width: 337px) {
+@media (min-width: 319px) {
 	#rightmost2nd {
 		display: block;
 	}
