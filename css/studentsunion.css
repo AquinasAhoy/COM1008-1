@@ -23,14 +23,14 @@ body {
 	line-height: var(--line-height);
 	font-size: var(--font-size);
 	text-align: justify;
-	min-width: 260px;
+	min-width: 273px;
 	max-width: 1024px;
 	margin: auto;
 }
 
 
 h1{
-	font-size: calc(1.6 * var(--font-size));
+	font-size: calc(1.5 * var(--font-size));
 	margin-top: 0;
 	margin-bottom: 0.25em;
 	color: rgb(0,177,225);
@@ -101,7 +101,7 @@ nav a {
 	display: none;
 }
 
-@media (min-width: 319px) {
+@media (min-width: 337px) {
 	#rightmost2nd {
 		display: block;
 	}
