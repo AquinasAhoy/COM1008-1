@@ -23,7 +23,7 @@ body {
 	line-height: var(--line-height);
 	font-size: var(--font-size);
 	text-align: justify;
-	min-width: 260px;
+	min-width: 261px;
 	max-width: 1024px;
 	margin: auto;
 }
@@ -106,13 +106,13 @@ nav a {
 	display: none;
 }
 
-@media (min-width: 319px) {
+@media (min-width: 320px) {
 	#rightmost2nd {
 		display: block;
 	}
 }
 
-@media (min-width: 430px) {
+@media (min-width: 431px) {
 	#rightmost {
 		display: block;
 	}
