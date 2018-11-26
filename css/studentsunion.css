@@ -9,7 +9,7 @@
 
 body {
 	background: url("../images/suFront1.jpg") center fixed; /* Sets background focused to a picture of the SU that is focused on the centre and static */
-	background-size: cover; /* Ensures the background image covers the entire screen */
+	background-size: auto 100%; /* Ensures the background image covers the entire screen */
 	background-repeat: no-repeat; /* Ensures the background image won't repeat */
 
 	min-width: 261px; /* Smallest width for body before entire site shrinks to accommodate */
@@ -55,6 +55,12 @@ header img{
 		max-width: 45%; /* Sets logo to 45% of body width */
 		min-width: 375px; /* Stops logo from becoming smaller at some resolutions under this new rule*/
 		padding: calc(120/768 * 100%) 0 calc(5/768 * 100%) 0; /* Adjusts vertical padding to be proportional */
+	}
+
+	body {
+		background: url("../images/suFront1.jpg") center fixed; /* Sets background focused to a picture of the SU that is focused on the centre and static */
+		background-size: cover; /* Ensures the background image covers the entire screen */
+		background-repeat: no-repeat; /* Ensures the background image won't repeat */
 	}
 
 	.key{ /* This class is for the key on each areas page */
