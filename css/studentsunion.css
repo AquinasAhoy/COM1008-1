@@ -170,7 +170,6 @@ a:visited {
 
 /* PAGE SPECIFIC ===========================================================================================================*/
 
-
 .key{ /* This class is for the key on each areas page */
 	width: 25%; /* This limits the size of the key to 25% of the body */
 	margin: 0; /* This aligns the key left */
@@ -184,84 +183,33 @@ input[type=email]{ /* This describes the email input box on the contact page */
 
 textarea { /* This is used for the textarea input box on the contact pages where the main message is sent */
 	resize: none; /* Disables resizing of the box which is on by default */
-	width: calc(100% - 4px);
-	font-family: Arial, sans-serif;
+	width: calc(100% - 4px); /* This sets the box to fill the body (and fix the padding that it ignores) */
+	font-family: Arial, sans-serif; /* This changes the default font for textarea to a more fitting one for the site */
 }
 
-
-
-
-
-
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* FOOTER ===========================================================================================================*/
 
 footer {
-	clear: both;
-	font-size: calc(0.75 * var(--font-size));
-	text-align: center;
-	color: rgb(0,177,225);
-
-	background-color: rgba(0,0,0,0.3);
-	margin-bottom: 0;
-	overflow: auto;
+	font-size: calc(0.75 * var(--font-size)); /* Font size is smaller than the main body text */
+	text-align: center; /* Text is aligned centrally */
+	color: rgb(0,177,225); /* Text colour is blue to fit the website aesthetic */
+	background-color: rgba(0,0,0,0.3); /* Background colour is more translucent than the body such that it doesn't take attention from the content */
+	margin-bottom: 0; /* This removes the gap when the site fills the page between the footer and the bottom of the webpage */
+	overflow: auto; /* This ensures that the background covers the entire of the footer */
 }
 
-footer p {
-	margin-top: 0;
-	margin-bottom: 5px;
-}
-
-footer ul {
-	padding-left: 0;
+footer ul { /* The footer contains a list with links to relevant webpages and a small line with copyright
+				The padding/margin is designed to be readable without taking up too much space */
+	padding-left: 0; /* This removes the left padding that causes the list to be off centre */
 	margin: 0;
 }
 
 footer li {
-    display: inline-block;
+    display: inline-block; /* Sets the list to be horizontal */
 	margin: 5px;
 }
-
-
-/* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-@media (min-width: 1440px) {
-	nav {
-		font-size: 1.3em;
-	}
-
-	footer {
-		font-size: 1em;
-	}
-
-	p,ul {
-		font-size: 1.3em;
-	}
-
-	h1{
-		font-size: 2em;
-	}
-
-	h2{
-		font-size: 1.75em;
-	}
-
-	div.key{
-		width: 25%;
-		display: block;
-		margin: 0;
-	}
-
-	img{
-		max-width: 80%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
+	
+footer p {
+	margin-top: 0; /* Follows the same formatting as before with a small margin on the bottom as this is the end of the webpage */
+	margin-bottom: 5px;
 }
-*/
