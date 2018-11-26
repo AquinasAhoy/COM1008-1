@@ -10,17 +10,17 @@
 body {
 	background: url("../images/suFront1.jpg") center fixed; /* Sets background focused to a picture of the SU that is focused on the centre and static */
 	background-size: cover; /* Ensures the background image covers the entire screen */
-	
+
 	min-width: 261px; /* Smallest width for body before entire site shrinks to accommodate */
 	max-width: 1024px; /* Largest width before body separates from the left and right sides of the screen */
-	
-	
+
+
 	color: white; /* Text colour for all non-header content */
 	font-family: Calibri, sans-serif;
 	line-height: 1.2;
 	font-size: var(--font-size);
 	text-align: justify; /* Ensures text from each full line spans the whole body */
-	
+
 	margin: auto; /* Centres the body */
 }
 
@@ -28,7 +28,7 @@ body {
 	:root {
 		--font-size: 0.833333334vw; /* Base font size is now proportional to width of screen (this value is approximately equal to 16px at 1080p) */
 	}
-	
+
 	body{
 		max-width: calc(1024/1920 * 100%); /* Body width is now proportional to the width of the screen */
 	}
@@ -54,6 +54,11 @@ header img{
 		max-width: 45%; /* Sets logo to 45% of body width */
 		min-width: 375px; /* Stops logo from becoming smaller at some resolutions under this new rule*/
 		padding: calc(120/768 * 100%) 0 calc(5/768 * 100%) 0; /* Adjusts vertical padding to be proportional */
+	}
+
+	.key{ /* This class is for the key on each areas page */
+		width: 50%; /* This limits the size of the key to 25% of the body */
+		margin: 0; /* This aligns the key left */
 	}
 }
 
@@ -137,7 +142,7 @@ main {
 main img, p { /* For each bit of content, the top margin is zero and the bottom margin is dependant on the font size */
 	margin-top: 0; /* This ensures that spacing is easy to manage and easy to look at at higher resolutions where the font size increases */
 	margin-bottom: var(--font-size);
-	
+
 	max-width: 100%; /* This prevents images from becoming greater than the body */
 }
 
@@ -152,7 +157,7 @@ h2 {
 h1, h2 { /* Headers follow the same margin traits as the other content elements, with a slightly smaller bottom margin as they normally are immediately */
 	margin-top: 0; /* followed by text or an image that is related to the header and should be closer as a result */
 	margin-bottom: calc(0.375 * var(--font-size));
-	
+
 	color: rgb(0,177,225); /* Headers have the same blue colour as the nav bar to fit with the aesthetic */
 }
 
@@ -165,16 +170,22 @@ a:link{
 }
 
 a:visited {
-	color: rgb(0,128,145); /* Changes the default visited colour to better fit the aesthetic of the site */
+	color: rgb(0,177,225); /* Changes the default visited colour to better fit the aesthetic of the site */
 }
 
 /* PAGE SPECIFIC ===========================================================================================================*/
 
 .key{ /* This class is for the key on each areas page */
-	width: 25%; /* This limits the size of the key to 25% of the body */
+	width: 60%; /* This limits the size of the key to 25% of the body */
 	margin: 0; /* This aligns the key left */
 }
 
+@media only screen and (min-width: 640px) { /* @media queiry to change size of the key images depending on screen size */
+	.key{ /* This class is for the key on each areas page */
+		width: 25%; /* This limits the size of the key to 25% of the body */
+		margin: 0; /* This aligns the key left */
+	}
+}
 
 input[type=email]{ /* This describes the email input box on the contact page */
 	width: calc(100% - 56px); /* It is designed to be the width of the body minus the send box */
@@ -208,7 +219,7 @@ footer li {
     display: inline-block; /* Sets the list to be horizontal */
 	margin: 5px;
 }
-	
+
 footer p {
 	margin-top: 0; /* Follows the same formatting as before with a small margin on the bottom as this is the end of the webpage */
 	margin-bottom: 5px;
