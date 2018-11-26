@@ -41,27 +41,28 @@
 			</ul>
 		</nav>
 
+		<!-- Code for main content -->
 		<main>
-			<h1>Contact</h1>
+			<h1>Contact</h1> <!-- Main header -->
 
 			<p>
 				Please use the form on this page to contact us directly. Write your message in the large box and please provide your email below so
 				we can reply to your message.
 			</p>
 
-			<form  method="POST" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl">
+			<form  method="POST" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl"> <!-- This is the form that deals with the
+																											 message and formats it into an email -->
 
-				<input name="recipient" type="hidden" value="jebarker1@sheffield.ac.uk,tbtonner1@sheffield.ac.uk">
-				<input name="subject" type="hidden" value="COM1008 Project Contact Form">
-				<input name="redirect" type="hidden"  value="http://stuwww.dcs.shef.ac.uk/people/jebarker1/contactok.html">
+				<input name="recipient" type="hidden" value="jebarker1@sheffield.ac.uk,tbtonner1@sheffield.ac.uk"> <!-- Hidden data with the recipient emails -->
+				<input name="subject" type="hidden" value="COM1008 Project Contact Form"> <!-- The subject of the email to the recipient -->
 
 				<textarea name="message" type="text" rows="10" required placeholder="Your message..."></textarea>
-				<input name="email" type="email" required placeholder="Your email...">
+				<input name="email" type="email" required placeholder="Your email..."> <!-- Text box, email box and submit button respectivley -->
 				<input type="submit" value="Send">
 
 			</form>
 
-			<ul>
+			<ul>  <!-- This section is not relevant to the form, it just allows users to use our emails without the contact form -->
 				<li>Tom Tonner: <a href="mailto:tbtonner1@sheffield.ac.uk">tbtonner1@sheffield.ac.uk</a></li>
 				<li>Joseph Barker: <a href="mailto:jebarker1@sheffield.ac.uk">jebarker1@sheffield.ac.uk</a></li>
 			</ul>
