@@ -10,6 +10,7 @@
 body {
 	background: url("../images/suFront1.jpg") center fixed; /* Sets background focused to a picture of the SU that is focused on the centre and static */
 	background-size: cover; /* Ensures the background image covers the entire screen */
+	background-repeat: no-repeat; /* Ensures the background image won't repeat */
 
 	min-width: 261px; /* Smallest width for body before entire site shrinks to accommodate */
 	max-width: 1024px; /* Largest width before body separates from the left and right sides of the screen */
